@@ -12,6 +12,7 @@
     - [pyserial](#pyserial)
     - [pyautogui](#pyautogui)
   - [Esquema de conexión](#esquema-de-conexión)
+  - [Case](#case)
 - [EN](#en)
   - [Requirements](#requirements)
   - [Arduino](#arduino-1)
@@ -22,6 +23,7 @@
     - [pyserial](#pyserial-1)
     - [pyautogui](#pyautogui-1)
   - [Wiring diagram](#wiring-diagram)
+  - [Case](#case-1)
 - [Referencias / References](#referencias--references)
 # ES
 Normalmente se hacen teclados o macropads con Arduino Micro Pro. 
@@ -74,6 +76,11 @@ Generalmente estos teclados suelen tener pines que representan las filas y las c
 ![esquema](./img/Conexion.jpg)
 Se haría lo mismo pero con dos pines menos en una matriz de 3x3.
 
+## Case
+Podés usar el case que quieras, te dejo dos cases que funcionan.  
+* Macropad 3x3. [VOID9 Macropad](https://www.thingiverse.com/thing:4222157)  
+* Macropad 4x4. [VOID16 Macropad](https://www.thingiverse.com/thing:4209505)
+
 # EN
 Keyboards or macropads are usually made with Arduino Micro Pro. 
 However, you may not have one of these at your disposal or you may have made a mistake when buying (like me).
@@ -122,7 +129,10 @@ Generally these keyboards usually have pins that represent the rows and columns 
 ![schematic](./img/Conexion.jpg)
 You would do the same but with two less pins in a 3x3 matrix.  
   
-  
+## Case
+You can use any case you want, here are two cases that work.  
+* Macropad 3x3. [VOID9 Macropad](https://www.thingiverse.com/thing:4222157)  
+* Macropad 4x4. [VOID16 Macropad](https://www.thingiverse.com/thing:4209505)
   
 # Referencias / References
 Código principal: [@crixodia](https://www.twitter.com/crixodia), [código](https://github.com/crixodia/arduino-nano-macro-keypad/tree/master).  
