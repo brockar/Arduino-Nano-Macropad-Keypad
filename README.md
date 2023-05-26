@@ -40,7 +40,7 @@ Esto para cada tecla del Keypad.
 ## Arduino
 ### Librería de arduino
 A través del administrador de librerías de Arduino debemos instalar **Keypad** de los autores **Mark Stanley** y **Alexander Brevig**.
-![libreria](./img/libreria.png)
+![libreria](https://i.imgur.com/13DPav0.png)
 
 ### Código
 En ./arduino hay dos códigos, uno para un keypad de 3x3 y otro para 4x4, tomando esos códigos como ejemplo podrías modificarlos para hacer de otra matriz.
@@ -73,7 +73,7 @@ Correr **macro_key_pad_xXx.pyw**.
 ## Esquema de conexión
 
 Generalmente estos teclados suelen tener pines que representan las filas y las columnas de la matriz de pulsadores. Conectarás cada pin del teclado a un pin **digital** del arduino.
-![esquema](./img/conexion.jpg)
+![esquema](https://i.imgur.com/ZAS0U6P.jpeg)
 Se haría lo mismo pero con dos pines menos en una matriz de 3x3.
 
 ## Case
@@ -96,7 +96,7 @@ This for each key on the Keypad.
 ## Arduino
 ### Arduino library
 Through the Arduino library manager we must install **Keypad** by authors **Mark Stanley** and **Alexander Brevig**.
-![library](./img/libreria.png)
+![library](https://i.imgur.com/13DPav0.png)
 
 ### Code
 In ./arduino there are two codes, one for a 3x3 keypad and one for 4x4, taking those codes as an example you could modify them to make another matrix.
@@ -126,7 +126,7 @@ Run **macro_key_pad_xXx.pyw**.
 ## Wiring diagram
 
 Generally these keyboards usually have pins that represent the rows and columns of the pushbutton matrix. You will connect each pin on the keypad to a **digital** pin on the arduino.
-![schematic](./img/conexion.jpg)
+![schematic](https://i.imgur.com/ZAS0U6P.jpeg)
 You would do the same but with two less pins in a 3x3 matrix.  
   
 ## Case
