@@ -43,7 +43,7 @@ A través del administrador de librerías de Arduino debemos instalar **Keypad**
 ![libreria](./img/libreria.png)
 
 ### Código
-En ./arduino hay dos códigos, uno para un keypad de 3x3 y otro para 4x4, tomando esos códigos como ejemplo podrías modificarlos para hacer de otra matriz.
+En ./Arduino hay dos códigos, uno para un keypad de 3x3 y otro para 4x4, tomando esos códigos como ejemplo podrías modificarlos para hacer de otra matriz.
 
 ## Python
 Después de instalar python, es necesario instalar unas dependencias para que funcione el código.
@@ -64,16 +64,16 @@ python -m pip install pyautogui
 ```
   
   
-En macro_key_pad_XxX.pyw modificar el COMx, podes ver qué numero va en ArduinoIDE.
+En MacroKeyPadXxX.pyw modificar el COMx, podes ver qué numero va en ArduinoIDE.
 
-También podés modificar qué hace cada tecla en macro_key_pad_xXx.pyw, toda la documentación está en su [página](https://pyautogui.readthedocs.io/en/latest/keyboard.html).
+También podés modificar qué hace cada tecla en MacroKeyPadxXx.pyw, toda la documentación está en su [página](https://pyautogui.readthedocs.io/en/latest/keyboard.html).
 
-Correr **macro_key_pad_xXx.pyw**.
+Correr **MacroKeyPadxXx.pyw**.
 
 ## Esquema de conexión
 
 Generalmente estos teclados suelen tener pines que representan las filas y las columnas de la matriz de pulsadores. Conectarás cada pin del teclado a un pin **digital** del arduino.
-![esquema](./img/conexion.jpg)
+![esquema](./img/Conexion.jpg)
 Se haría lo mismo pero con dos pines menos en una matriz de 3x3.
 
 ## Case
@@ -99,7 +99,7 @@ Through the Arduino library manager we must install **Keypad** by authors **Mark
 ![library](./img/libreria.png)
 
 ### Code
-In ./arduino there are two codes, one for a 3x3 keypad and one for 4x4, taking those codes as an example you could modify them to make another matrix.
+In ./Arduino there are two codes, one for a 3x3 keypad and one for 4x4, taking those codes as an example you could modify them to make another matrix.
 
 ## Python
 After installing python, you need to install some dependencies for the code to work.
@@ -118,15 +118,15 @@ With pyautogui we will be able to "press" keys through code.
 ```shell
 python -m pip install pyautogui
 ```
-In macro_key_pad_xXx.pyw modify the COMx, you can see which number goes in ArduinoIDE.  
+In MacroKeyPadxXx.pyw modify the COMx, you can see which number goes in ArduinoIDE.  
 
 You can also modify what each key does in MacroKeyPadxXx.pyw, all the documentation is in its [page](https://pyautogui.readthedocs.io/en/latest/keyboard.html).  
 
-Run **macro_key_pad_xXx.pyw**.
+Run **MacroKeyPadxXx.pyw**.
 ## Wiring diagram
 
 Generally these keyboards usually have pins that represent the rows and columns of the pushbutton matrix. You will connect each pin on the keypad to a **digital** pin on the arduino.
-![schematic](./img/conexion.jpg)
+![schematic](./img/Conexion.jpg)
 You would do the same but with two less pins in a 3x3 matrix.  
   
 ## Case
