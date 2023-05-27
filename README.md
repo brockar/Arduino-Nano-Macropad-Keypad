@@ -77,10 +77,13 @@ Generalmente estos teclados suelen tener pines que representan las filas y las c
 Se haría lo mismo pero con dos pines menos en una matriz de 3x3.
 
 ## Case
-Podés usar el case que quieras, te dejo dos cases que funcionan.  
-* Macropad 3x3. [VOID9 Macropad](https://www.thingiverse.com/thing:4222157)  
-* Macropad 4x4. [VOID16 Macropad](https://www.thingiverse.com/thing:4209505)
+Podés usar el case que quieras, te dejo un case que funciona con arduino nano.  
+* `./case/case_macropad.obj`
+* `./case/plate_macropad.obj`
 
+
+Si se quiere modificar algo, está el archivo de Fusion 360 en `./case/macropad.f3d`.   
+Hecho por: Mante#7952 (discord).
 # EN
 Keyboards or macropads are usually made with Arduino Micro Pro. 
 However, you may not have one of these at your disposal or you may have made a mistake when buying (like me).
@@ -130,9 +133,12 @@ Generally these keyboards usually have pins that represent the rows and columns 
 You would do the same but with two less pins in a 3x3 matrix.  
   
 ## Case
-You can use any case you want, here are two cases that work.  
-* Macropad 3x3. [VOID9 Macropad](https://www.thingiverse.com/thing:4222157)  
-* Macropad 4x4. [VOID16 Macropad](https://www.thingiverse.com/thing:4209505)
+You can use any case you want, I uploaded a case that works with arduino nano.  
+* `./case/case_macropad.obj`.
+* `./case/plate_macropad.obj`.
+
+If you want to modify something, there is the Fusion 360 file in `./case/macropad.f3d`.  
+By: @Mante#7952 (discord)
   
 # Referencias / References
 Código principal: [@crixodia](https://www.twitter.com/crixodia), [código](https://github.com/crixodia/arduino-nano-macro-keypad/tree/master).  
