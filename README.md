@@ -13,10 +13,6 @@
     - [pyautogui](#pyautogui)
   - [Esquema de conexión](#esquema-de-conexión)
   - [Case](#case)
-- [con Arduino Pro Micro](#con-arduino-pro-micro)
-  - [Case](#case-1)
-  - [Esquema de conexión](#esquema-de-conexión-1)
-  - [QMK/VIAL](#qmkvial)
 - [EN](#en)
   - [Requirements](#requirements)
   - [Arduino](#arduino-1)
@@ -27,14 +23,10 @@
     - [pyserial](#pyserial-1)
     - [pyautogui](#pyautogui-1)
   - [Wiring diagram](#wiring-diagram)
-  - [Case](#case-2)
-- [with Arduino Pro Micro](#with-arduino-pro-micro)
-  - [Case](#case-3)
-  - [Connection diagram](#connection-diagram)
-  - [QMK/VIAL](#qmkvial-1)
+  - [Case](#case-1)
 - [Referencias / References](#referencias--references)
 # ES
-Normalmente se hacen teclados o macropads con Arduino Micro Pro. 
+Normalmente se hacen teclados o macropads con [Arduino Micro Pro](https://github.com/brockar/streamdeck-macropad-hw#contenido--content). 
 Sin embargo, puede que no tengas a tu disposición uno de estos o te hayas equivocado al comprar (como yo).
 El arduino nano no tiene HID, es decir que la PC no lo puede recnocer como teclado.
 
@@ -50,7 +42,7 @@ Hardware:
 * Diodos (1N4148). (uno por switch).
 * Switches.
 * Keycaps.
-* Arduino Pro Micro USB C
+* Arduino Nano
 * Case y Plate
 * Tornillos M3x16mm.
 
@@ -88,7 +80,6 @@ También podés modificar qué hace cada tecla en macro_key_pad_xXx.pyw, toda la
 Correr **macro_key_pad_xXx.pyw**.
 
 ## Esquema de conexión
-
 Generalmente estos teclados suelen tener pines que representan las filas y las columnas de la matriz de pulsadores. Conectarás cada pin del teclado a un pin **digital** del arduino.
 ![esquema](https://i.imgur.com/ZAS0U6P.jpeg)
 Se haría lo mismo pero con dos pines menos en una matriz de 3x3.
@@ -101,38 +92,8 @@ Podés usar el case que quieras, te dejo dos cases que funcionan con arduino nan
 Si se quiere modificar algo, está el archivo de Fusion 360 en `./case/XxX/macropad_XxX.f3d`.   
 Hecho por: Mante#7952 (discord).
 
-# con Arduino Pro Micro 
-Hacer un macropad con un arduino pro micro es mucho más fácil, ya que podemos hacerlo con VIAL o QMK.  
-Solamente sería soldar, compilar y listo.
-
-Necesitariamos lo mismo que con el anterior:
-* Cable.
-* Diodos (1N4148). (uno por switch).
-* Switches.
-* Keycaps.
-* Arduino Pro Micro USB C
-* Case y Plate
-* Tornillos M3x16mm.
-
-## Case 
-El case a elegir está en `case/4x4/PM_xxx`, podés elegir entre recto o inclinado (con ángulo en la base). Están hechos para tornillos M3x16mm.
-Por el momento sólo tengo el modelo hecho en 4x4 para pro micro, más adelante lo voy a hacer para 3x3.
-
-## Esquema de conexión
-Para la conexión soldamos las filas con los diodos, y las columnas simplemente con cable.
-Luego unimos primero las filas de arriba para abajo y después las columnas de derecha a izquierda, mirando el macropad desde las conexiones. 
-![Imagen](https://i.imgur.com/dGGI7zD.png)
-
-## QMK/VIAL
-Utilizamos el método que está descripto en [este repo](https://github.com/brockar/redox-handwired-3dp#qmk), pero ponemos la carpeta `void16` (está dentro de `vial/`) en `vial-qmk/keyboards` o `qmk/keyboards`.  
-Para compilar podemos hacerlo con QMK o con Vial.
-Escribimos en QMK MSYS, `qmk compile -kb void16 -km default` para compilarlo en QMK.
-Escribimos en QMK MSYS, `qmk compile -kb void16 -km default` para compilarlo con VIAL.
-
-Luego [cargamos el firmware](https://github.com/brockar/redox-handwired-3dp#cargar-firmware) y listo, ya tenemos nuestro macropad.
-
 # EN
-Keyboards or macropads are usually made with Arduino Micro Pro. 
+Keyboards or macropads are usually made with [Arduino Pro Micro](https://github.com/brockar/streamdeck-macropad-hw#contenido--content). 
 However, you may not have one of these at your disposal or you may have made a mistake when buying (like me).
 The arduino nano does not have HID, meaning that the PC cannot recognize it as a keyboard.
 
@@ -151,7 +112,6 @@ Hardware:
 * Arduino Pro Micro USB C
 * Case and Plate
 * M3x16mm screws.
-
 ## Arduino
 ### Arduino library
 Through the Arduino library manager we must install **Keypad** by authors **Mark Stanley** and **Alexander Brevig**.
@@ -183,46 +143,17 @@ You can also modify what each key does in MacroKeyPadxXx.pyw, all the documentat
 
 Run **macro_key_pad_xXx.pyw**.
 ## Wiring diagram
-
 Generally these keyboards usually have pins that represent the rows and columns of the pushbutton matrix. You will connect each pin on the keypad to a **digital** pin on the arduino.
 ![schematic](https://i.imgur.com/ZAS0U6P.jpeg)
 You would do the same but with two less pins in a 3x3 matrix.  
-  
+
 ## Case
 You can use any case you want, here are two cases that work with arduino nano.  
 * case/XxX`.
 * We made a 3x3 and a 4x4, each one has a case inclined 5 degrees and another one straight.
 
 If you want to modify something, there is the Fusion 360 file in `./case/XxX/macropad_XxX.f3d`.
-# with Arduino Pro Micro 
-Making a macropad with an arduino pro micro is much easier, since we can do it with VIAL or QMK.  
-It would only be soldering, compiling and ready.
 
-We would need the same as with the previous one:
-* Cable.
-* Diodes (1N4148). (one per switch).
-* Switches.
-* Keycaps.
-* Arduino Pro Micro USB C
-* Case and Plate
-* M3x16mm screws.
-
-## Case 
-The case to choose is in `case/4x4/PM_xxx`, you can choose between straight or slanted (angled at the base). They are made for M3x16mm screws.
-At the moment I only have the model made in 4x4 for pro micro, later I will make it for 3x3.
-## Connection diagram
-For the connection we solder the rows with the diodes, and the columns simply with wire.
-Then we join first the rows from top to bottom and then the columns from right to left, looking at the macropad from the connections. 
-![Image](https://i.imgur.com/dGGI7zD.png)
-## QMK/VIAL
-We use the method that is described in [this repo](https://github.com/brockar/redox-handwired-3dp#qmk), but we put the `void16` folder (it is inside `vial/`) in `vial-qmk/keyboards` or `qmk/keyboards`.  
-To compile we can do it with QMK or with Vial.
-We write in QMK MSYS, `qmk compile -kb void16 -km default` to compile it in QMK.
-Type in QMK MSYS, `qmk compile -kb void16 -km default` to compile with VIAL.
-
-Then [load the firmware](https://github.com/brockar/redox-handwired-3dp#cargar-firmware) and that's it, we have our macropad.
-
-  
 # Referencias / References
 Código principal: [@crixodia](https://www.twitter.com/crixodia), [código](https://github.com/crixodia/arduino-nano-macro-keypad/tree/master).  
 Video relacionado: [@Hazz Techno Dance](https://www.youtube.com/@hazztechnodance8190), [Video](https://www.youtube.com/watch?v=JGrRwc5wo2s).  
